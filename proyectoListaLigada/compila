@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#compilar las implementaciones
+gcc -W -Wall -c impl/ListaLigada.c
+
+#mover los archivos.o en su respectiva carpeta (objs/)
+mv *.o objs/
+
+#compilar el main
+gcc -W -Wall -o build/programaListaLigada main/main.c objs/*.o
