@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#compilar las implementaciones
+gcc -W -Wall -c src/*.c
+
+#mover los archvos.o a su carpeta
+mv *.o objs/
+
+#compilar el main
+gcc -W -Wall -o bin/life main.c objs/*.o
