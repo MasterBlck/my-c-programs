@@ -1,0 +1,6 @@
+Para compilar programas que usan la libreria de xlsxio 
+
+$ gcc -o programaejecutable archivo.c [-lxlsxio_read | -llxlsxio_write | -lxlsxio_readw ]
+
+Referencia:
+https://github.com/brechtsanders/xlsxio
